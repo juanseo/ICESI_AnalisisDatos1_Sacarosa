@@ -15,8 +15,6 @@ data = data.set_index('Time')
 # Reagrupar por intervalos de 10 minutos y sacar promedio
 df_resample = data.resample('3H').mean()
 
-
-
 # 3. Calcular la matriz de correlación (Pearson por defecto)
 correlation_matrix = df_resample.corr(method='pearson')
 
