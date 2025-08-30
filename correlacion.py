@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-data = pd.read_csv("DatosAreaMolinosRed.csv", sep=";")
+data = pd.read_csv("DatosAreaMolinos.csv", sep=";")
 
 # Convertir columna de tiempo a datetime
 data['Time'] = pd.to_datetime(data['Time'])
